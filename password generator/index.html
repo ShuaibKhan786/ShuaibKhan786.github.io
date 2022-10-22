@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANDOM PASSWORD GENERATOR</title>
+
+    <link rel="icon" type="image/png" href="passgen.ico">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="javascript.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title" >RANDOM PASSWORD GENERATOR</h1>
+        <div class="container_1">
+        <input type="text" id="inp" placeholder="password">
+        <i id="copy" class="material-icons" style="font-size:28px;color:blue">content_copy</i>
+        </div>
+        <form action="" class="form">
+            
+        <div class="container_2">
+            <label for="">Password Length</label>
+            <input id="range"  value="16" type="range" min="8" max="24">
+            <span id="span"></span>
+           
+                
+        </div>
+        <br>
+      
+                
+
+           
+            
+               <!-- uppercase -->
+               <label for="upper">UpperCase</label>
+               <input id="upper" type="checkbox">
+               <!-- lowercase -->
+               <label for="lower">LowerCase</label>
+               <input id="lower" type="checkbox">
+               <!-- numbers -->
+               <label for="number">Numbers</label>
+               <input id="number" type="checkbox">
+               <!-- symbols -->
+               <label for="symbol">Symbols</label>
+               <input id="symbol" type="checkbox">
+            
+              
+        </form>
+        <button id="btn" >GENERATE</button>
+    </div>
+</body>
+</html>

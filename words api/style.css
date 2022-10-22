@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,300&display=swap');
+
+body{
+    background-color: rgb(113,110,119,0.4);
+    margin: 0;
+    color: rgb(14,28,37);
+}
+.parentContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+.childContainer{
+    box-shadow: 0 0  8px rgb(14,28,37,10);
+    background-color: rgb(113,110,119,0.5);
+    padding: 1rem 2rem;
+    text-align: center;
+}
+h1{
+    font-family: 'Silkscreen', cursive;
+    letter-spacing: 0.5rem;
+}
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.inputContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.inputContainer input{
+    background-color:  rgb(113,110,119);
+    padding: 0.3rem 2.5rem;
+    border: none;
+    box-shadow: 0 0  8px rgb(14,28,37,10);
+    outline: none;
+}
+.inputContainer input::placeholder{
+    color: #000;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.inputContainer input[type="text"]{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.wordSoundContainer{
+    display: flex;
+    flex-direction: row;
+    row-gap: 0.2rem;
+    justify-content: left;
+    align-items: center;  
+}
+.phoneticsContainer span{
+    font-family: arial,sans-serif;
+}
+.wordSoundContainer h2,h1{
+    margin-bottom :0%;
+}
+.mainFormContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: left;
+  
+    text-align: left;
+}
+.mainFormContainer p{
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+.childContainer footer{
+    padding: 1rem 0rem;
+}
+
+.mianWord{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.1rem;
+}
+.mainDefinition h3{
+    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+.definition{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #000;
+    font-size: 1.2rem;
+}
+.example{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #000;
+}
+.btn,.playSound:hover{
+    cursor: pointer;
+}
+
+a:link, a:visited, a:hover, a:active{
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.validationStyle{
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+}
+  

@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@font-face {
+    font-family: 'Raleway_l';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Raleway_s';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+:root{
+    --bs-font-sans-serif : 'Montserrat', sans-serif !important; 
+}
+
+.navbar-toggler {
+    border: 0 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+/* Lines of the Toggler */
+.toggler-icon{
+    width: 25px;
+    height: 2px;
+    background-color: #000000;
+    display: block;
+    transition: all 0.2s;
+}
+
+/* Adds Space between the lines */
+.middle-bar{
+    margin: 5px auto;
+}
+
+/* State when navbar is opened (START) */
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+/* State when navbar is opened (END) */
+
+/* State when navbar is collapsed (START) */
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+/* State when navbar is collapsed (END) */
+
+/* Color of Toggler when collapsed */
+.navbar-toggler.collapsed .toggler-icon {
+    background-color: #000000;
+}
+
+.display-5{
+    font-family: 'Raleway_l'  !important;
+    letter-spacing: .88em !important; 
+}
+.navbar{
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    padding-top: 1.2rem !important;
+}
+.d-flex a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+kbd{
+    padding: 0 10px !important;
+    font-family: 'Raleway_l'!important;
+    letter-spacing: 0.2em;
+}
+.cus-h1-font{
+    font-family: 'Raleway_l';
+}
+.cus-p1-font{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.cus-p2-font{
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 0.2em;
+}
+
+@media screen and (max-width: 760px) {
+    .cus-fon {
+        font-family: 'Raleway_s'  !important;
+        letter-spacing: .88em !important; 
+    }
+}
+@media screen and (max-width: 760px) {
+    .cus-sizing{
+        margin: 50px 0px;
+    }
+}
+@media screen and (max-width: 760px) {
+    .cus-collapse ul{
+        height: 100vh;
+        font-size: xx-large;
+    }
+}
+/* custom font-weight of the navigation bar item on the current page */
+.cus-a-link[aria-current = "page"]{
+    font-weight: 700;
+}
+
+
+
+.cus-a-link{
+    position: relative !important;
+  }
+
+.cus-a-link::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 1.5px;
+    left: 50%;
+    bottom:0;
+    background-color: #000000;
+    transition: all ease-in-out 250ms;
+}
+  .cus-a-link:hover::after,
+  .cus-a-link:focus::after{
+    width: 100%;
+    left: 0;
+}
+@media screen and (max-width: 760px) {
+    .cus-a-link::after{
+        height: 1px;
+    }
+}
+.input-group-text.cus-inp-icon{
+    border: 1px solid #b6b6b6;
+    background-color: #ffffff;
+}
+.cus-inp{
+    border: 1px solid #b6b6b6;
+    background-color: #ffffff; 
+}
+.cus-inp::placeholder{
+    font-family: 'Montserrat', sans-serif ;
+    text-align: center;
+    color:  #b6b6b6 !important;
+    font-size: 1rem !important;
+}
+
+.cus-inp[type="text"],[type="email"],[name="message"]{
+    font-family: 'Montserrat', sans-serif ;
+    text-align: left;
+    font-size: 1rem !important;
+    color: #000000 !important;
+}
+
+.form-control.cus-inp:focus{
+    border-color: #b6b6b6 !important; 
+    box-shadow: 3px 3px rgba(0,0,0, 0.25) !important;
+}
+
+
+.error{
+    font-weight: 400 !important;
+    font-family: 'Montserrat', sans-serif !important; 
+    font-size: 0.8rem;
+    color: 	#272727;
+    
+}
+/* animate box */
+.pos-box{
+    width: 50px;
+    height: 50px;
+    animation: posmove 3s infinite;
+ }
+ .neg-box{
+    width: 50px;
+    height: 50px;
+    animation: negmove 3s infinite;
+}
+@keyframes negmove {
+    from {background-color: rgba(182,182,182,0.5);}
+    to {background-color: 	rgba(39,39,39,0.5);}
+}
+  @keyframes posmove {
+    from {background-color: 	rgba(39,39,39,0.5);}
+    to {background-color: 	rgba(182,182,182,0.5);}
+}
+.sub-wrapper{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.main-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(favicon/about.png);
+    background-size: 300px 300px;
+    background-position: center;
+    background-repeat: no-repeat;  
+    opacity: 0.8;
+}
+@media screen and (max-width: 912px) {
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+.about-hello{
+    font-weight: bold;
+    
+    letter-spacing: 0.1rem;
+}
+.carousel-caption {
+    color: rgb(25,25,25) !important;
+}
+.carousel-dark .carousel-caption {
+    color: rgb(25,25,25) !important; 
+}
+.cus-img{
+    border-radius: 0.5rem;
+}
+
+.cus-link-project:link,
+.cus-link-project:visited,
+.cus-link-project:hover,
+.cus-link-project:active{
+    color: #ffffff;
+    text-decoration: none;
+}
+.resume-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+.cus-btn-project{
+    outline: none;
+    border: none;
+    opacity: 0.8;
+    padding: 0.1rem 0.9rem;
+}
+.cus-btn-project-size{
+    padding: 0rem 0.5rem;
+    font-size: 16px;
+}
