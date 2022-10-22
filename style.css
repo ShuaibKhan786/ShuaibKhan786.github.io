@@ -282,3 +282,10 @@ kbd{
     padding: 0rem 0.5rem;
     font-size: 16px;
 }
+.project-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
