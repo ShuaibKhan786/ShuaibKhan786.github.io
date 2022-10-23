@@ -278,14 +278,14 @@ kbd{
     opacity: 0.8;
     padding: 0.1rem 0.9rem;
 }
-.cus-btn-project-size{
-    padding: 0rem 0.5rem;
-    font-size: 16px;
-}
 .project-Container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     min-height: 100vh;
+}
+.pro-sec{
+    opacity: 0.8;
+    font-weight: lighter;
 }
